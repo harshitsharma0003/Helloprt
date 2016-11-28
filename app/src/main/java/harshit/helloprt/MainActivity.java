@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String s=e.getText().toString();
+                System.out.println(s);
                 socket.sendMessage(s);            // it is the button when pressed it sends msg
             }
         });
